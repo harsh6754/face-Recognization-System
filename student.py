@@ -400,7 +400,7 @@ class Student:
         else:
             try:
                 conn = mysql.connector.connect(
-                    host="localhost", user="root", password="H@rsh2810", database="face_recognition")
+                    host="localhost", user="YourDatabaseName", password="<Password>", database="face_recognition")
                 my_cursor = conn.cursor()
                 my_cursor.execute("insert into student values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", (
                     self.var_dep.get(),
