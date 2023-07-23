@@ -431,7 +431,7 @@ class Student:
 
     def fetch_data(self):
         conn = mysql.connector.connect(
-            host="localhost", user="root", password="H@rsh2810", database="face_recognition")
+            host="localhost", user="*******", password="******", database="face_recognition")
         my_cursor = conn.cursor()
         my_cursor.execute("select * from student")
         data = my_cursor.fetchall()
